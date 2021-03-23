@@ -15,4 +15,4 @@ class MyTestCase(unittest.TestCase):
         for row in test_data:
             result = float(row['Result'])
             self.assertEqual(self.calculator.addition(row['Value 1'], row['Value 2']), result)
-            self.assertEqual(self.calculator.result, result)
+
