@@ -19,3 +19,7 @@ def div(a, b):
     b = float(b)
     c = b / a
     return c
+def square(a):
+    a = float(a)
+    c = a * a
+    return c
