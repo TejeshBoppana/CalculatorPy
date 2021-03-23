@@ -5,3 +5,8 @@ def addition(a,b):
     b = int(b)
     c = a + b
     return c
+def sub(a, b):
+    a = float(a)
+    b = float(b)
+    c = b - a
+    return c

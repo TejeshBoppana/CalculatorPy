@@ -16,3 +16,9 @@ class MyTestCase(unittest.TestCase):
             result = float(row['Result'])
             self.assertEqual(self.calculator.addition(row['Value 1'], row['Value 2']), result)
 
+    def test_subtraction(self):
+        test_data = csvreader('src/csv/UnitTestSubtraction.csv').data
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertEqual(self.calculator.subtraction(row['Value 1'], row['Value 2']), result)
+            self.assertEqual(self.calculator.result, result)
