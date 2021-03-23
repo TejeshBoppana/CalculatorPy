@@ -43,3 +43,10 @@ class MyTestCase(unittest.TestCase):
             result = float(row['Result'])
             self.assertEqual(self.calculator.square_(row['Value 1']), result)
             self.assertEqual(self.calculator.result, result)
+
+    def test_sqrt(self):
+        test_data = csvreader('src/csv/UnitTestSquareRoot.csv').data
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertAlmostEqual(self.calculator.sqrt_(row['Value 1']), result)
+            self.assertAlmostEqual(self.calculator.result, result)

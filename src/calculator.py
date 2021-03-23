@@ -23,3 +23,7 @@ def square(a):
     a = float(a)
     c = a * a
     return c
+def sqrt(a):
+    a = float(a)
+    c = math.sqrt(a)
+    return c
