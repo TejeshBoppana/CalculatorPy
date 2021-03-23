@@ -22,3 +22,10 @@ class MyTestCase(unittest.TestCase):
             result = float(row['Result'])
             self.assertEqual(self.calculator.subtraction(row['Value 1'], row['Value 2']), result)
             self.assertEqual(self.calculator.result, result)
+
+    def test_times(self):
+        test_data = csvreader('src/csv/UnitTestMultiplication.csv').data
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertEqual(self.calculator.multiply(row['Value 1'], row['Value 2']), result)
+            self.assertEqual(self.calculator.result, result)

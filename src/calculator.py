@@ -10,3 +10,8 @@ def sub(a, b):
     b = float(b)
     c = b - a
     return c
+def times(a, b):
+    a = float(a)
+    b = float(b)
+    c = a * b
+    return c
